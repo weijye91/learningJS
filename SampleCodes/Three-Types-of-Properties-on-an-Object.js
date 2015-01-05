@@ -32,7 +32,7 @@
 
     // ****** The code line bottom will triger an error. ******
     //myWidget.aStaticFunc();
-    
+
     // A static function is defined on the widget function itself, not on the instance.
     // This is the correct way to call the static function.
     Widget.aStaticFunc();
