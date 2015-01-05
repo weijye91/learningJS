@@ -2,14 +2,15 @@
   "name": "DragAndDrop",
   "version": "0.0.1",
   "description": "An experiment to try out the drag and drop feature for creating UI layout.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/weijye91/learningJS/DragAndDrop"
   },
   "author": "Wei-jye Wang",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^1.5.3",
+    "karma": "^0.12.31"
+  }
 }
