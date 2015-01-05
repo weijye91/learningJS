@@ -23,13 +23,35 @@ module.exports = function (grunt) {
                     online: false,
                     port: 3000
                 }
+            } // End of 'dev'.
+        }, // End of browserSync.
+        bootlint: {
+            options: {
+                stoponerror: true,
+                stoponwarning: true,
+                relaxerror: []
+            },
+            files: ['./src/*.html']
+        }, // End of bootlint.
+        validation: {
+            options: {
+                reset: grunt.option('reset') || false,
+                stoponerror: false,
+                relaxerror: [] // Ignores these errors.
+            },
+            files: {
+                src: ['./src/*.html']
             }
-        }
+        } // End of validation.
     });
 
     // Load npm tasks.
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-bootlint');
+    grunt.loadNpmTasks('grunt-html-validation');
 
     // Define default task.
     grunt.registerTask('default', ['browserSync']);
+    grunt.registerTask('bootlint', ['bootlint']);
+    grunt.registerTask('html', ['validation']);
 };

@@ -11,7 +11,7 @@
 (function(){
     "use strict";
 
-    // This is using the normal property.
+    // Normal and easiest way to create an object.
     var aCar = {};
     aCar.color = "green";
     console.log(aCar.color);
