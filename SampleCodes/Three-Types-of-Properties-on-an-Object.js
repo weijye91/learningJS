@@ -7,6 +7,8 @@
  */
 
 (function() {
+    'use strict';
+
     function Widget() {
         // This is a property for an instance, but inheritance of it is not needed.
         this.anInstanceFunc = function() {
