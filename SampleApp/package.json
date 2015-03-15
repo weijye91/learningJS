@@ -4,7 +4,7 @@
   "description": "An experiment to try out the drag and drop feature for creating UI layout.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/weijye91/learningJS/DragAndDrop"
+    "url": "https://github.com/weijye91/learningJS/SampleApp"
   },
   "author": "Wei-jye Wang",
   "license": "ISC",
